@@ -54,7 +54,7 @@ footer {
     .caixa {
         flex-flow: row wrap;
         justify-content: space-between;
-        margin: 0 2rem;
+        margin: 0 5rem;
     }
 }
 
