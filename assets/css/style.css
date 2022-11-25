@@ -1,12 +1,12 @@
 body {
-    font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .caixa {
-    position: relative;
-    width: 940px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header {
@@ -15,22 +15,22 @@ header {
 }
 
 nav {
-    position: absolute;
-    top: 110px;
-    right: 0;
+    text-align: center;
+    margin: 15px 0;
 }
 
 nav li {
     display: inline;
-    margin: 0 0 0 15px;
+    margin-left: 15px;
 }
 
 nav a {
-    text-transform: uppercase;
     color: #000000;
-    font-weight: bold;
     font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 nav a:hover {
@@ -39,9 +39,9 @@ nav a:hover {
 }
 
 footer {
-    text-align: center;
     background: url("../img/footer-bg.jpg");
     padding: 40px 0;
+    text-align: center;
 }
 
 .copyright {
@@ -50,39 +50,34 @@ footer {
     margin: 20px 0 0;
 }
 
-@media screen and (max-width: 480px) {
-
+@media screen and (min-width: 768px) {
     .caixa {
-        width: auto;
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-
-    nav {
-        position: static;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        margin: 0 2rem;
     }
 }
 
 .produtos {
-    width: 940px;
-    margin: 0 auto;
-    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
 }
 
 .produtos li {
-    display: inline-block;
-    text-align: center;
-    width: 30%;
-    vertical-align: top;
-    margin: 0 1.5%;
-    padding: 30px 20px;
-    box-sizing: border-box;
     border: 2px solid #000000;
     border-radius: 10px;
+    display: inline-block;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    text-align: center;
+    vertical-align: top;
 }
 
 .produtos li:hover {
     border-color: #C18C19;
+    cursor: pointer;
 }
 
 .produtos li:active {
