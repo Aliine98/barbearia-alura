@@ -1,5 +1,5 @@
 form {
-   margin: 3rem 1rem;
+   margin: 3rem 2rem;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -27,8 +27,8 @@ fieldset {
 }
 
 .enviar {
-   width: 40%;
-   padding: 15px 0;
+   align-self: center;
+   padding: 15px;
    background: orange;
    color: white;
    font-weight: bold;
@@ -63,4 +63,30 @@ td,
 th {
    border: 1px solid #000000;
    padding: 8px 15px;
+}
+
+@media screen and (min-width: 688px) {
+   form {
+      width: 75%;
+      margin-inline-start: auto;
+      display: block;
+   }
+
+   .input-padrao {
+      max-width: 500px;
+   }
+
+   .enviar {
+      width: 300px;
+   }
+}
+
+@media screen and (min-width: 1400px) {
+   form {
+      width: 70%;
+   }
+
+   .enviar {
+      width: 500px;
+   }
 }
